@@ -4,6 +4,7 @@
 To run build simply  
 
 ```npm install -g serve```
+
 ```serve -s build``` 
 
 ## Quandl Api
