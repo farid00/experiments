@@ -1,0 +1,14 @@
+<script>
+function callApi() {
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET", "https://www.quandl.com/api/v3/datasets/WIKI/FB/data.json?api_key=PuQJPPurXxXq-NjWoY_2", true)
+	xhr.send()
+	xhr.onreadystatechange = function() {
+		if(this.readyState == 4 && this.status == 200) {
+			var response = JSON.parse(this.responseText);
+			console.log(response)
+		}
+	}
+}
+callApi();
+</script>
